@@ -2,6 +2,8 @@
 
 
 int main() {
+
+    //variaveis
     char estado1, estado2;
     char codigo1[10], codigo2[10];
     char nomeCidade1[50], nomeCidade2[50];
@@ -10,7 +12,7 @@ int main() {
     int populacao1, populacao2;
     float area1, area2, pib1, pib2;
     
-     //Cadastro das duas cartas
+     //Cadastro das cartas
      printf("INSIRA OS DADOS DA CARTA 1!\n");
 
      printf("Informe o Estado(A ao H):\n");
