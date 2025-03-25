@@ -10,6 +10,7 @@ int main(){
     int populacao1, populacao2;
     float area1, area2, pib1, pib2;
     float densidadePopulacional1, pibPerCapita1, densidadePopulacional2, pibPerCapita2;
+    float superPoder1, superPoder2;
     
      //Cadastro das duas cartas
      printf("INSIRA OS DADOS DA CARTA 1!\n");
@@ -30,6 +31,7 @@ int main(){
      scanf("%d", &numero1);
      densidadePopulacional1 = (float) populacao1 / area1;
      pibPerCapita1 = (float) pib1 / populacao1;
+     superPoder1 = (float) populacao1 + area1 + pib1 + numero1 + densidadePopulacional1 + pibPerCapita1;
 
  
      printf("INSIRA OS DADOS DA CARTA 2!\n");
@@ -50,32 +52,21 @@ int main(){
      scanf("%d", &numero2);
      densidadePopulacional2 = (float) populacao2 / area2;
      pibPerCapita2 = (float) pib2 / populacao2;
+     superPoder2 = (float) populacao2 + area2 + pib2 + numero2 + densidadePopulacional2 + pibPerCapita2;
 
-    //Exibindo os atributos das cartas
+    printf("Comparação de cartas(Area):\n");
 
-    printf("CARTA 1:\n");
+    printf("Carta 1 - %s: %f\n", nomeCidade1, area1);
+    printf("Carta 2 - %s: %f\n", nomeCidade2, area2);
 
-    printf("ESTADO: %c\n", estado1);
-    printf("CÓDIGO: %c0%s\n", estado1, codigo1);
-    printf("NOME DA CIDADE: %s\n", nomeCidade1);
-    printf("POPULAÇÃO: %d\n", populacao1);
-    printf("ÁREA: %.2f km²\n", area1);
-    printf("PIB %.2f REAIS\n", pib1);
-    printf("NÚMERO DE PONTOS TURÍSTICOS: %d\n", numero1);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional1);
-    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
-
-    printf("CARTA 2:\n");
-
-    printf("ESTADO: %c\n", estado2);
-    printf("CÓDIGO: %c0%s\n", estado2, codigo2);
-    printf("NOME DA CIDADE: %s\n", nomeCidade2);
-    printf("POPULAÇÃO: %d\n", populacao2);
-    printf("ÁREA: %.2f\n", area2);
-    printf("PIB %.2f\n", pib2);
-    printf("NÚMERO DE PONTOS TURÍSTICOS: %d\n", numero2);
-    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
-    printf("PIB per Capita: %.2f reais", pibPerCapita2);
+    if (area1 > area2)
+    {
+        printf("A Carta 1 %s venceu!\n", nomeCidade1);
+    }
+    else{
+        printf("A Carta 2 %s venceu!\n", nomeCidade2);
+    }
+    
 
 
     return 0;
