@@ -56,11 +56,11 @@ int main(){
 
     printf("## COMPARAÇAO DAS CARTAS ###)\n");
     printf("Escolha uma opcao para comparar:\n");
-    printf("1. Populacao");
-    printf("2. Area");
-    printf("3. PIB");
-    printf("4. Numero de pontos turisticos");
-    printf("5. Densidade Demografica");
+    printf("1. Populacao\n");
+    printf("2. Area\n");
+    printf("3. PIB\n");
+    printf("4. Numero de pontos turisticos\n");
+    printf("5. Densidade Demografica\n");
     scanf("%d", &escolhaComparacao);
 
     switch (escolhaComparacao)
@@ -68,76 +68,86 @@ int main(){
     case 1:
         if (populacao1 > populacao2)
         {
-            printf("%s: \n POPULAÇÃO: %d", nomeCidade1, populacao1);
-            printf("%s: \n POPULAÇÃO: %d", nomeCidade2, populacao2);
-            printf("A CARTA 1 VENCEU!");
+            printf("%s: \n POPULAÇÃO: %d\n", nomeCidade1, populacao1);
+            printf("%s: \n POPULAÇÃO: %d\n", nomeCidade2, populacao2);
+            printf("A CARTA 1 VENCEU!\n");
         } else if (populacao1 < populacao2) {
-            printf("%s: \n POPULAÇÃO: %d", nomeCidade1, populacao1);
-            printf("%s: \n POPULAÇÃO: %d", nomeCidade2, populacao2);
-            printf("A CARTA 2 VENCEU!");
+            printf("%s: \n POPULAÇÃO: %d\n", nomeCidade1, populacao1);
+            printf("%s: \n POPULAÇÃO: %d\n", nomeCidade2, populacao2);
+            printf("A CARTA 2 VENCEU!\n");
         } else {
-            printf("HOUVE UM EMPATE!!!");
+            printf("%s: \n POPULAÇÃO: %d\n", nomeCidade1, populacao1);
+            printf("%s: \n POPULAÇÃO: %d\n", nomeCidade2, populacao2);
+            printf("HOUVE UM EMPATE!!!\n");
         }
         break;
     case 2:
         if (area1 > area2)
         {
-            printf("%s: \n AREA(km): %3.f", nomeCidade1, area1);
-            printf("%s: \n AREA(km): %3.f", nomeCidade2, area2);
-            printf("A CARTA 1 VENCEU!");
+            printf("%s: \n AREA(km): %3.f\n", nomeCidade1, area1);
+            printf("%s: \n AREA(km): %3.f\n", nomeCidade2, area2);
+            printf("A CARTA 1 VENCEU!\n");
         } else if (area1 < area2) {
-            printf("%s: \n AREA(km): %3.f", nomeCidade1, area1);
-            printf("%s: \n AREA(km): %3.f", nomeCidade2, area2);
-            printf("A CARTA 2 VENCEU!");
+            printf("%s: \n AREA(km): %3.f\n", nomeCidade1, area1);
+            printf("%s: \n AREA(km): %3.f\n", nomeCidade2, area2);
+            printf("A CARTA 2 VENCEU!\n");
         } else {
-            printf("HOUVE UM EMPATE!!!");
+            printf("%s: \n AREA(km): %3.f\n", nomeCidade1, area1);
+            printf("%s: \n AREA(km): %3.f\n", nomeCidade2, area2);
+            printf("HOUVE UM EMPATE!!!\n");
         }
         break;
     case 3:
         if (pib1 > pib2)
         {
-            printf("%s: \n PIB: %3.f", nomeCidade1, pib1);
-            printf("%s: \n PIB: %3.f", nomeCidade2, pib2);
-            printf("A CARTA 1 VENCEU!");
+            printf("%s: \n PIB: %3.f\n", nomeCidade1, pib1);
+            printf("%s: \n PIB: %3.f\n", nomeCidade2, pib2);
+            printf("A CARTA 1 VENCEU!\n");
         } else if (pib1 < pib2) {
-            printf("%s: \n PIB: %3.f", nomeCidade1, pib1);
-            printf("%s: \n PIB: %3.f", nomeCidade2, pib2);
-            printf("A CARTA 2 VENCEU!");
+            printf("%s: \n PIB: %3.f\n", nomeCidade1, pib1);
+            printf("%s: \n PIB: %3.f\n", nomeCidade2, pib2);
+            printf("A CARTA 2 VENCEU!\n");
         } else {
-            printf("HOUVE UM EMPATE!!!");
+            printf("%s: \n PIB: %3.f\n", nomeCidade1, pib1);
+            printf("%s: \n PIB: %3.f\n", nomeCidade2, pib2);
+            printf("HOUVE UM EMPATE!!!\n");
         }
         break;
     case 4:
         if (numero1 > numero2)
         {
-            printf("%s: \n Pontos Turisticos: %d", nomeCidade1, numero1);
-            printf("%s: \n Pontos Turisticos: %d", nomeCidade2, numero2);
-            printf("A CARTA 1 VENCEU!");
+            printf("%s: \n Pontos Turisticos: %d\n", nomeCidade1, numero1);
+            printf("%s: \n Pontos Turisticos: %d\n", nomeCidade2, numero2);
+            printf("A CARTA 1 VENCEU!\n");
         } else if (numero1 < numero2) {
-            printf("%s: \n Pontos Turisticos: %d", nomeCidade1, numero1);
-            printf("%s: \n Pontos Turisticos: %d", nomeCidade2, numero2);
-            printf("A CARTA 2 VENCEU!");
+            printf("%s: \n Pontos Turisticos: %d\n", nomeCidade1, numero1);
+            printf("%s: \n Pontos Turisticos: %d\n", nomeCidade2, numero2);
+            printf("A CARTA 2 VENCEU!\n");
         } else {
-            printf("HOUVE UM EMPATE!!!");
+            printf("%s: \n Pontos Turisticos: %d\n", nomeCidade1, numero1);
+            printf("%s: \n Pontos Turisticos: %d\n", nomeCidade2, numero2);
+            printf("HOUVE UM EMPATE!!!\n");
         }
         break;
     case 5:
         if (densidadePopulacional1 > densidadePopulacional2)
         {
-            printf("%s: \n Densidade Demografica: %3.f", nomeCidade1, densidadePopulacional1);
-            printf("%s: \n Densidade Demografica: %3.f", nomeCidade2, densidadePopulacional2);
-            printf("A CARTA 2 VENCEU!");
+            printf("%s: \n Densidade Demografica: %3.f\n", nomeCidade1, densidadePopulacional1);
+            printf("%s: \n Densidade Demografica: %3.f\n", nomeCidade2, densidadePopulacional2);
+            printf("A CARTA 2 VENCEU!\n");
         } else if (densidadePopulacional1 < densidadePopulacional2) {
-            printf("%s: \n Densidade Demografica: %3.f", nomeCidade1, densidadePopulacional1);
-            printf("%s: \n Densidade Demografica: %3.f", nomeCidade2, densidadePopulacional2);
-            printf("A CARTA 1 VENCEU!");
+            printf("%s: \n Densidade Demografica: %3.f\n", nomeCidade1, densidadePopulacional1);
+            printf("%s: \n Densidade Demografica: %3.f\n", nomeCidade2, densidadePopulacional2);
+            printf("A CARTA 1 VENCEU!\n");
         } else {
-            printf("HOUVE UM EMPATE!!!");
+            printf("%s: \n Densidade Demografica: %3.f\n", nomeCidade1, densidadePopulacional1);
+            printf("%s: \n Densidade Demografica: %3.f\n", nomeCidade2, densidadePopulacional2);
+            printf("HOUVE UM EMPATE!!!\n");
         }
         break;
     
     default:
-        printf("Opção invalida!!!");
+        printf("Opção invalida!!!\n");
         break;
     }
 
